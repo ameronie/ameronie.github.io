@@ -2,25 +2,63 @@
 
 
 :root {
-    --primary-color: #88B7B5;
-    --secondary-color: #A7CAB1;
-    --accent1-color: #847996;
-    --accent2-color: #F4ECD6;
-    --heading-font: "Raleway";
-    --paragraph-font: Lato, Helvetica, sans-serif
+    --primary-color: #4b94b1;
+    --secondary-color: #d9dad2;
+    --accent1-color: #112142;
+    --accent2-color: #f3f0e8;
+    --heading-font: "Raleway", Helvetica, sans-serif;
+    --paragraph-font: "Lato", Helvetica, sans-serif
 }
-
 html {
     background-color: var(--accent2-color);
 }
-
+body{
+    font-size: 16px;
+}
 header, main, footer {
-    max-width: 960px;
+    width: 960px;
     margin: 0 auto;
+}
+header {
+    color: var(--accent2-color);
+    background-color: var(--primary-color);
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img{
+    width: 80px;
+    height: auto;
+}
+.hero img {
+    width:100%;
+    height: auto;
+}
+
+.section1 img {
+    width: 30%;
+    height: auto;
+    padding: 1rem;
+}
+.section1 {
+    display: inline-flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.navigation {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 1rem;
 }
 
 img {
-    max-width: 100%
+    width: 50px;
+    height: 50px;
+    padding: 1rem;
 }
 
 h1 {
@@ -28,26 +66,26 @@ h1 {
     color: var(--accent2-color); 
 }
 
-h2, h3, h4, h5, h6 {
+header>h1 {
     font-family: var(--heading-font);
     color: var(--primary-color);
-}
-
-header {
-    color: var(--accent2-color);
-    background-color: var(--primary-color);
-}
-
-header>h1 {
-    color: var(--primary-color);
+    font-size: 3rem;
 }
 
 header>h2 {
+    font-family: var(--heading-font);
     color: var(--secondary-color);
+    font-size: 1.5rem;
+    padding: 1rem;
 }
+
 p {
     font-family: var(--paragraph-font);
     color: var(--accent1-color);
+}
+
+footer{
+    padding: 1rem;
 }
 
 .colors {
@@ -57,33 +95,18 @@ p {
     text-align: center
 }
 
-.colors th {
-    background-color: #999
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around
 }
-
-.colors td {
-    width: 25%;
-    height: 3em
+.copyright {
+    font-size: .8rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
 }
-
-.primary {
-    background-color: var(--primary-color);
-}
-
-.secondary {
-    background-color: var(--secondary-color);
-}
-
-.accent1 {
-    background-color: var(--accent1-color);
-}
-
-.accent2 {
-    background-color: var(--accent2-color);
-}
-
 nav {
-    background-color: var(--secondary-color);
     line-height: 3em;
     text-align: center;
     font-size: 1.2em
@@ -105,6 +128,5 @@ nav a:visited {
 }
 
 nav a:hover {
-    color: var(--primary-color);
-    background-color: var(--accent2-color);
+    color: var(--secondary-color);
 }
