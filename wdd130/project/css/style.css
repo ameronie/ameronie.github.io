@@ -86,6 +86,8 @@ p {
 
 footer{
     padding: 1rem;
+    color: var(--accent2-color);
+    background-color: var(--primary-color);
 }
 
 .colors {
