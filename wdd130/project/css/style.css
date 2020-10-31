@@ -15,10 +15,15 @@ html {
 body{
     font-size: 16px;
 }
-header, main, footer {
+header, footer, .hero {
+    width: 100%;
+    margin: 0 auto;
+}
+main {
     width: 960px;
     margin: 0 auto;
 }
+
 header {
     color: var(--accent2-color);
     background-color: var(--primary-color);
@@ -32,21 +37,42 @@ header img{
     width: 80px;
     height: auto;
 }
+
+section img {
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 5px 5px 5px #999;
+}
+
 .hero img {
     width:100%;
     height: auto;
 }
+.action {
+    display: flex;
+    justify-content: center; 
+}
 
-.section1 img {
+section img {
     width: 30%;
     height: auto;
     padding: 1rem;
 }
-.section1 {
-    display: inline-flex;
-    flex-direction: row;
-    padding: 1rem;
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
 }
+
+/*.section1 {
+    grid-column:;
+}
+.section2 {
+    grid-column:;
+}
+.section3 {
+    grid-column:;
+}*/
 
 .navigation {
     display: flex;
@@ -124,11 +150,17 @@ nav a {
     min-width: 70px
 }
 
-nav a:link,
+nav a:link {
+    color: #FF0000;
+}
 nav a:visited {
     color: var(--primary-color);
 }
 
 nav a:hover {
     color: var(--secondary-color);
+}
+
+nav a:active {
+    color: #FF00FF;
 }
