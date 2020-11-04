@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 
+@media screen and (max-width: 550px) {
+    .______ {
+      display: block;
+    }
+  }
 
 :root {
     --primary-color: #4b94b1;
@@ -16,7 +21,7 @@ body{
     font-size: 16px;
 }
 header, footer, .hero {
-    width: 100%;
+    max-width: 960px;
     margin: 0 auto;
 }
 main {
