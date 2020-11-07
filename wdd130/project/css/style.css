@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 
 :root {
-    --primary-color: #4b94b1;
+    --primary-color: #948145;
     --secondary-color: #d9dad2;
-    --accent1-color: #112142;
+    --accent1-color: #4b4213;
     --accent2-color: #f3f0e8;
     --heading-font: "Raleway", Helvetica, sans-serif;
     --paragraph-font: "Lato", Helvetica, sans-serif
@@ -61,14 +61,18 @@ nav a {
     padding: 10px;
     min-width: 10px;
 }
+nav a:hover {
+    color: var(--accent2-color);
+}
 
 main {
     font-family: var(--paragraph-font);
     color: var(--accent1-color)
 }
-.bonner-box {
+.banner-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    position: relative;
 }
 .banner {
     height: auto;
@@ -79,11 +83,13 @@ main {
     box-shadow: 5px 5px 5px rgb(87, 87, 87);
 }
 .action {
-    grid-column: 1;
+    grid-column: 2;
     grid-row: 1;
     background-color: rgba(240, 240, 240, .5);
-    margin: 7em 6em;
-    text-align: center;
+    margin: 6em 7em 7em 9em;
+    padding: 0em 1em;
+    text-align: left;
+    position: absolute;
 }
 .action button {
     line-height: 2em;
@@ -107,6 +113,8 @@ main{
 #img1, #img2 {
     border: 1px solid var(--accent1-color);
     box-shadow: 5px 5px 5px rgb(87, 87, 87);
+    height: 277px;
+    width: auto;
 }
 h2 {
     font-family: var(--heading-font);
@@ -124,15 +132,20 @@ footer {
     color: var(--accent2-color);
     background-color: var(--primary-color);
 }
-#contact-info {
+.contact-info {
     grid-column: 1;
     place-items: center;
 }
-#socialmedia {
+.socialmedia {
     grid-column: 2;
     place-items: center;
-}*/
-#copyright {
+}
+.socialmedia img {
+    width: 60px;
+    height: 60px;
+}
+
+.copyright {
     grid-column: 1/3;
 }
 @media screen and (max-width: 550px) {
