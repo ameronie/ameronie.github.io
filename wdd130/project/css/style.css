@@ -106,6 +106,11 @@ main {
     place-items: center;
     padding: 30px;
 }
+.amenities {
+    display: flex;
+    place-items: center;
+}
+
 main{
     font-family: var(--paragraph-font);
     color: var(--accent1-color)
