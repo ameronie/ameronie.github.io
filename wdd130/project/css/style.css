@@ -91,6 +91,15 @@ main {
     text-align: left;
     position: absolute;
 }
+.spotlight{
+    grid-column: 2;
+    grid-row: 1;
+    background-color: rgba(240, 240, 240, .5);
+    margin: 6em 7em 7em 9em;
+    padding: 0em 1em;
+    text-align: center;
+    position: absolute;
+}
 .action button {
     line-height: 2em;
     width: 10em;
