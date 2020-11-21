@@ -125,7 +125,7 @@ main{
     font-family: var(--paragraph-font);
     color: var(--accent1-color)
 }
-#img1, #img2 {
+#img1, #img2, #img3 {
     border: 1px solid var(--accent1-color);
     box-shadow: 5px 5px 5px rgb(87, 87, 87);
     height: 277px;
@@ -145,6 +145,13 @@ h2 {
 .family-search {
     grid-column: 1/3;
 }
+.contact {
+    place-items: start;
+}
+.milestones {
+    place-items: start;
+}
+
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr;

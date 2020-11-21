@@ -115,6 +115,7 @@
             </div>
         </div>
         <section class="main-content">
+            <h2>Tell Us About Yourself...</h2>
             <div id="feedback" style="display: block;"></div>
 
             <form action="/my-handling-form-page" method="post">
@@ -130,6 +131,31 @@
                     <li>
                         <label for="tel">Telephone Number:</label>
                         <input type="tel" id="tel" name="tel">
+                    </li>
+                    <li>
+                        <label for="date1">Check-In Date:</label>
+                        <input type="date" id="date1" name="date1">
+                    </li>
+                    <li>
+                        <label for="date2">Check-out Date:</label>
+                        <input type="date" id="date2" name="date2">
+                    </li>
+                    <li>
+                        <label for="nights">Number of Nights:</label>
+                        <input type="number" id="nights" name="nights" min="1">
+                    </li>
+                    <li>
+                        <label for="guests">Number of Guests:</label>
+                        <select id="guests" name="guests">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9+</option>
                     </li>
                     <li>
                         <label for="msg">Message:</label>
