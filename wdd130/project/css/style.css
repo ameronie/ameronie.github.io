@@ -83,11 +83,10 @@ main {
     box-shadow: 5px 5px 5px rgb(87, 87, 87);
 }
 .action {
-    grid-column: 2;
-    grid-row: 1;
     background-color: rgba(240, 240, 240, .5);
-    margin: 6em 7em 7em 9em;
-    padding: 0em 1em;
+    margin-top: 5rem;
+    margin-left: 40rem;
+    padding: 1rem;
     text-align: left;
     position: absolute;
 }
@@ -204,6 +203,7 @@ footer {
         .form {
             display: block;
             place-items: center;
+            margin-bottom: 3rem;
         }
 
         ul {
@@ -215,7 +215,32 @@ footer {
         form li+li {
             margin-top: 1.5em;
         }
+        [type="radio"] {
+            width: 100px;
+        }
 
+        [type="radio"] {
+            border-color: #000;
+        }
+        #guests {
+            font: 1em sans-serif;
+
+            /* Uniform text field size */
+            width: 300px;
+            box-sizing: border-box;
+
+            /* Match form field borders */
+            border: 1px solid #999;
+        }
+        #guests:focus, {
+            border-color: #000;
+        }
+
+        fieldset {
+            margin: 5rem;
+            padding: 1rem;
+        }
+    
         label {
             /* Uniform size & alignment */
             display: inline-block;
@@ -223,6 +248,7 @@ footer {
             text-align: right;
             padding: 5px;
         }
+        
 
         input,
         textarea {
