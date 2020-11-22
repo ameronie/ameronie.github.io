@@ -232,7 +232,7 @@ footer {
             /* Match form field borders */
             border: 1px solid #999;
         }
-        #guests:focus, {
+        #guests:focus {
             border-color: #000;
         }
 
