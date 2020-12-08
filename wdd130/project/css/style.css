@@ -82,7 +82,7 @@ main {
     border: 1px solid var(--accent1-color);
     box-shadow: 5px 5px 5px rgb(87, 87, 87);
 }
-.action {
+.action { 
     background-color: rgba(240, 240, 240, .5);
     margin-top: 5rem;
     margin-left: 40rem;
