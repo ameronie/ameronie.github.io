@@ -199,7 +199,7 @@ footer {
 }
 .socialmedia {
     grid-column: 2;
-    align-self: end;
+    align-self: start;
 }
 .socialmedia img {
     width: 60px;
