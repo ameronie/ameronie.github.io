@@ -11,28 +11,37 @@
             }
             .card {
                 width: 320px;
-                box-shadow: 2px #888;
+                box-shadow: 1px 1px 4px 1px #888;
                 border-radius: 3px;
                 background-color: white;
-                font: sans-serif;
                 overflow: hidden;
+                display: grid;
             }
             p {
                 padding: 3px 3px 3px 3px;
+                font-family: sans-serif;
+                margin-left: 15px;
             }
-          
+            .button {
+            margin-left: 0%;
+            padding: 10px;
+            color: black;
+            border-radius: 1px;
+            text-align: auto;
+}
         </style>
     </head>
     <body>
         <article class="card">
         <img src="https://picsum.photos/320/240" alt="internet pic">
         <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <footer>
+            <button class="viewButton">View</button>
+            <button class="editButton">Edit</button>
+            <span class="time">9 mins</span>
+        </footer>
     </article>
     </body>
-    <footer>
-        <button class="viewButton">View</button>
-        <button class="editButton">Edit</button>
-    </footer>
 </html>
 
 
