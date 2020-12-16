@@ -146,7 +146,7 @@ main {
     grid-gap: 30px;
     place-items: center;
     padding: 20px;
-    margin-top: 60px;
+    margin-top: 80px;
     margin-bottom: 60px;
 }
 
@@ -192,6 +192,56 @@ main {
     border: 1px solid;
     box-shadow: 5px 5px 5px rgb(87, 87, 87);
     width: 100%;
+}
+
+.card {
+    width: 320px;
+    box-shadow: 1px 1px 4px 1px #888;
+    border-radius: 3px;
+    background-color: whitesmoke;
+    overflow: hidden;
+    display: grid;
+    margin-top: 55px;
+    margin-bottom: 30px;
+}
+
+#articleimg1,
+#articleimg2 {
+    max-width: 100%;
+    margin: 3px;
+}
+
+.cardp {
+    padding: 3px 3px 3px 3px;
+    font-family: var(--paragraph-font);
+    margin-left: 15px;
+    width: 300px;
+}
+
+.cardfooter {
+    background-color: rgb(44, 58, 37);
+    opacity: .5;
+    color: whitesmoke;
+    padding: 8px;
+    width: 310px;
+    font-family: var(--paragraph-font);
+}
+
+.button {
+    margin-left: 0%;
+    padding: 10px;
+    color: black;
+    border-radius: 1px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.viewButton {
+    margin-left: 15px;
+}
+
+.time {
+    margin-left: 120px;
 }
 
 h2 {
@@ -274,7 +324,7 @@ form {
 }
 
 .form h2 {
-    padding-top: 30px;
+    padding-top: 60px;
 }
 
 ul {
@@ -367,9 +417,11 @@ button {
 between the labels and their text fields */
     margin-left: .5em;
 }
-.button {
+
+.button1 {
     margin-bottom: 3rem;
 }
+
 #formbutton {
     line-height: 2em;
     width: 10em;
@@ -377,6 +429,7 @@ between the labels and their text fields */
     font-family: var(--paragraph-font);
     color: black;
 }
+
 #feedback {
     /* add styling and layout properties of your own design here as needed */
     padding: 10px;
